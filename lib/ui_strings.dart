@@ -4,5 +4,5 @@ class UiStrings {
   static String schedule= 'Agenda';
   static String members = 'Miembros';
   static String sponsors = 'Sponsors';
-  static String messageWelcome = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, non netus in sed bibendum cursus. Ut ipsum nisl, tristique nunc purus non amet. A scelerisque imperdiet justo, bibendum. Id pellentesque eu sagittis, fermentum, felis, vitae.';
+  static String messageWelcome = 'Flutter Bolivia es una comunidad apasionada por el diseño y desarrollo mobile con el objetivo de compartir contenido de Flutter en español.';
 }

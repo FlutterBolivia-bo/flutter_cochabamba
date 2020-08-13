@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_cochabamba/UiStrings.dart';
+import 'package:flutter_cochabamba/ui_strings.dart';
 import 'package:flutter_cochabamba/constants/constants.dart';
-import 'package:flutter_cochabamba/pages/EventsPage.dart';
-import 'package:flutter_cochabamba/pages/HomePage.dart';
-import 'package:flutter_cochabamba/pages/MembersPage.dart';
-import 'package:flutter_cochabamba/pages/SponsorsPage.dart';
-import 'package:flutter_cochabamba/theme/CustomThemes.dart';
-import 'package:flutter_cochabamba/theme/ThemeChanger.dart';
+import 'package:flutter_cochabamba/pages/events_page.dart';
+import 'package:flutter_cochabamba/pages/home_page.dart';
+import 'package:flutter_cochabamba/pages/members_page.dart';
+import 'package:flutter_cochabamba/pages/sponsors_page.dart';
+import 'package:flutter_cochabamba/theme/custom_themes.dart';
+import 'package:flutter_cochabamba/theme/theme_changer.dart';
 import 'package:provider/provider.dart';
 
 void main() {

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_cochabamba/UiStrings.dart';
+import 'package:flutter_cochabamba/ui_strings.dart';
 import 'package:flutter_cochabamba/constants/constants.dart';
 import 'package:flutter_cochabamba/constants/enums.dart';
-import 'package:flutter_cochabamba/theme/CustomTextStyles.dart';
-import 'package:flutter_cochabamba/widgets/CustomCard.dart';
+import 'package:flutter_cochabamba/theme/custom_text_styles.dart';
+import 'package:flutter_cochabamba/widgets/custom_card.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:url_launcher/url_launcher.dart';

@@ -11,6 +11,7 @@ class Routes {
   static final String HOME = 'home';
   static final String SPONSORS = 'sponsors';
   static final String MEMBERS = 'members';
+  static final String MEMBER_DETAIL = 'memberDetail';
 }
 
 class RouteImage {

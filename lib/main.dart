@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cochabamba/pages/member_detail.dart';
 import 'package:flutter_cochabamba/ui_strings.dart';
 import 'package:flutter_cochabamba/constants/constants.dart';
 import 'package:flutter_cochabamba/pages/events_page.dart';
@@ -41,6 +42,7 @@ class MainApp extends StatelessWidget {
         Routes.EVENTS: (BuildContext context) => EventsPage(),
         Routes.SPONSORS: (BuildContext context) => SponsorsPage(),
         Routes.MEMBERS: (BuildContext context) => MembersPage(),
+        Routes.MEMBER_DETAIL: (BuildContext context) => MemberDetail(),
       },
     );
   }

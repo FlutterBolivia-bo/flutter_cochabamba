@@ -10,6 +10,7 @@ class Routes {
   static final String EVENTS = 'events';
   static final String HOME = 'home';
   static final String SPONSORS = 'sponsors';
+  static final String SPONSOR_DETAIL = 'sponsorDetail';
   static final String MEMBERS = 'members';
   static final String MEMBER_DETAIL = 'memberDetail';
 }

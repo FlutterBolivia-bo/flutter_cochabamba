@@ -4,8 +4,14 @@ import 'package:flutter_cochabamba/models/members.dart';
 import 'package:flutter_cochabamba/provider/firebase/cloud_firestore_api.dart';
 import 'package:flutter_cochabamba/ui_strings.dart';
 
-class MembersPage extends StatelessWidget {
+class MembersPage extends StatefulWidget {
+  @override
+  _MembersPageState createState() => _MembersPageState();
+}
+
+class _MembersPageState extends State<MembersPage> {
   final db = CloudFireStoreAPI();
+
   ThemeData theme;
 
   @override

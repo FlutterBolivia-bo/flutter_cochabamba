@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cochabamba/pages/member_detail.dart';
 import 'package:flutter_cochabamba/pages/sponsor_detail.dart';
+import 'package:flutter_cochabamba/provider/controllers/event_day_controller.dart';
 import 'package:flutter_cochabamba/ui_strings.dart';
 import 'package:flutter_cochabamba/constants/constants.dart';
 import 'package:flutter_cochabamba/pages/events_page.dart';
@@ -22,6 +23,9 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider<ThemeChanger>(
           create: (_) => ThemeChanger(CustomThemes.mainTheme),
+        ),
+        ChangeNotifierProvider<EventDayController>(
+          create: (_) => EventDayController(),
         ),
       ],
       child: MainApp(),

@@ -18,7 +18,6 @@ class _SponsorDetailState extends State<SponsorDetail> {
     theme = Theme.of(context);
     final Sponsor sponsor =
         ModalRoute.of(context).settings.arguments as Sponsor;
-    print(sponsor.name);
     return Scaffold(
       body: Container(
         height: double.infinity,

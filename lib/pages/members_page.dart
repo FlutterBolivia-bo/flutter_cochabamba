@@ -38,7 +38,6 @@ class _MembersPageState extends State<MembersPage> {
   }
 
   Widget _createListMembers(List<Member> members, BuildContext context) {
-    print(members);
     if (members != null) {
       return GridView.count(
         crossAxisCount: 2,

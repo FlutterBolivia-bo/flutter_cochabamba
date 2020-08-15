@@ -17,7 +17,6 @@ class _MemberDetailState extends State<MemberDetail> {
     mediaQuery = MediaQuery.of(context);
     theme = Theme.of(context);
     final Member member = ModalRoute.of(context).settings.arguments as Member;
-    print(member.name);
     return Scaffold(
       body: Container(
         height: double.infinity,

@@ -2,6 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_cochabamba/models/stages.dart';
 import 'package:flutter_cochabamba/provider/controllers/event_day_controller.dart';
+import 'package:flutter_cochabamba/theme/custom_text_styles.dart';
+import 'package:flutter_cochabamba/ui_strings.dart';
 import 'package:provider/provider.dart';
 
 class StagesList extends StatefulWidget {
@@ -19,6 +21,13 @@ class _StagesListState extends State<StagesList> {
     theme = Theme.of(context);
     List<Stages> _currentStages = eventDayController.currentStages;
     print(_currentStages);
+    if(_currentStages.isEmpty) {
+      return Container(
+        child: Center(
+          child: Text(UiStrings.thereAreNoUpcomingEvents, style: CustomTextStyles.textTitle(),),
+        ),
+      );
+    }
     return Container(
       padding: EdgeInsets.all(20.0),
       width: double.infinity,

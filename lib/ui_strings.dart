@@ -6,4 +6,5 @@ class UiStrings {
   static String sponsors = 'Sponsors';
   static String noAvailable = 'No Disponible';
   static String messageWelcome = 'Flutter Bolivia es una comunidad apasionada por el diseño y desarrollo mobile con el objetivo de compartir contenido de Flutter en español.';
+  static String thereAreNoUpcomingEvents = 'No existe eventos próximos';
 }

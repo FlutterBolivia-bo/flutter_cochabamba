@@ -34,7 +34,7 @@ class _SponsorDetailState extends State<SponsorDetail> {
           Container(
             child: Column(
               children: [
-                _photoMember(sponsor.photoUrl),
+                _photoSponsor(sponsor),
                 _name(sponsor.name),
                 SizedBox(
                   height: 15,
@@ -62,10 +62,12 @@ class _SponsorDetailState extends State<SponsorDetail> {
     );
   }
 
-  Widget _photoMember(String url) {
+  Widget _photoSponsor(Sponsor sponsor) {
     return Container(
         height: mediaQuery.size.height * 0.6,
-        child: Image(image: NetworkImage(url)));
+        child: Hero(
+            tag: sponsor.id,
+            child: Image(image: NetworkImage(sponsor.photoUrl))));
   }
 
   Widget _name(String name) {

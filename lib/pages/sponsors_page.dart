@@ -62,8 +62,11 @@ class _SponsorsPageState extends State<SponsorsPage> {
         clipBehavior: Clip.antiAlias,
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0)),
-        child: Image(
-          image: NetworkImage(sponsor.photoUrl),
+        child: Hero(
+          tag: sponsor.id,
+          child: Image(
+            image: NetworkImage(sponsor.photoUrl),
+          ),
         ),
       ),
     );

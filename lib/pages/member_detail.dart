@@ -21,7 +21,7 @@ class _MemberDetailState extends State<MemberDetail> {
       body: Container(
         height: double.infinity,
         color: theme.primaryColor,
-        child: _memberDetail(member, context),
+        child: SafeArea(child: _memberDetail(member, context)),
       ),
     );
   }
@@ -33,7 +33,7 @@ class _MemberDetailState extends State<MemberDetail> {
           Container(
             child: Column(
               children: [
-                _photoMember(member.photoUrl),
+                _photoMember(member),
                 _name(member.name),
                 SizedBox(
                   height: 15,
@@ -47,6 +47,7 @@ class _MemberDetailState extends State<MemberDetail> {
             ),
           ),
           Container(
+            margin: EdgeInsets.all(10),
             padding: EdgeInsets.all(10),
             child: SafeArea(
                 child: Card(
@@ -61,10 +62,12 @@ class _MemberDetailState extends State<MemberDetail> {
     );
   }
 
-  Widget _photoMember(String url) {
+  Widget _photoMember(Member member) {
     return Container(
         height: mediaQuery.size.height * 0.6,
-        child: Image(image: NetworkImage(url)));
+        child: Hero(
+            tag: member.id,
+            child: Image(image: NetworkImage(member.photoUrl))));
   }
 
   Widget _name(String name) {

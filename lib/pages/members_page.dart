@@ -62,7 +62,8 @@ class _MembersPageState extends State<MembersPage> {
         clipBehavior: Clip.antiAlias,
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0)),
-        child: Image(image: NetworkImage(member.photoUrl)),
+        child: Hero(
+            tag: member.id, child: Image(image: NetworkImage(member.photoUrl))),
       ),
     );
   }
